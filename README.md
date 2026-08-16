@@ -1,29 +1,146 @@
-# 3MTT SME MFA Rollout & Security Hardening Project
+# 3MTT SME MFA Rollout
 
-## Executive Summary
-This project provides a comprehensive, end-to-end Multi-Factor Authentication (MFA) rollout plan, security policy framework, and end-user onboarding documentation designed for Small and Medium Enterprises (SMEs). Developed as part of the 3MTT Cybersecurity track, this repository addresses critical access control vulnerabilities by establishing robust authentication mechanisms, host-based firewall configurations, and SIEM monitoring strategies tailored for resource-constrained environments.
+## Enterprise MFA Rollout & Authentication Governance Framework
 
----
+**3MTT Cybersecurity Capstone Project**
 
-## 📋 Table of Contents
-- [Project Overview](#project-overview)
-- [Repository Structure](#repository-structure)
-- [Key Artifacts & Documentation](#key-artifacts--documentation)
-- [Implementation & Security Controls](#implementation--security-controls)
-- [Verification & Compliance](#verification--compliance)
-- [License & Acknowledgments](#license--acknowledgments)
+**Candidate:** Ahmad Mukhtar  
+**Track:** Cybersecurity  
+**Institution:** Kano State Polytechnic  
+**Focus Area:** Identity & Access Management (IAM)
 
 ---
 
-## 🎯 Project Overview
-In modern enterprise environments, reliance on single-factor authentication (passwords) exposes organizations to credential dumping, phishing, and unauthorized lateral movement. This project delivers a production-ready security blueprint to transition an enterprise to an enforced Multi-Factor Authentication state while maintaining operational efficiency and end-user compliance.
+## Project Overview
 
-### Core Objectives
-* **Identity Security:** Mandate MFA (TOTP/FIDO2) across cloud and on-premise infrastructure.
-* **Access Control:** Enforce strict password policies, account lockouts, and session timeouts.
-* **Host & Network Defense:** Implement host-based firewall rules and network segmentation.
-* **Threat Visibility:** Integrate authentication logs with a SIEM platform (Wazuh) for automated threat detection and alerting.
+This capstone presents an Enterprise Multi-Factor Authentication (MFA) Rollout and Authentication Governance Framework designed for a Small and Medium-sized Enterprise (SME).
+
+The project addresses the security risks associated with password-only authentication, including credential compromise, brute-force attacks, phishing, and credential stuffing.
+
+The proposed framework combines stronger password governance, mandatory MFA, phased implementation, and technical authentication verification.
 
 ---
 
-## 📁 Repository Structure
+## Problem Statement
+
+Password-only authentication creates a significant security risk because compromised credentials can provide unauthorised access to organisational resources.
+
+SMEs require practical security controls that strengthen authentication without creating unnecessary operational disruption.
+
+This project therefore proposes a structured MFA governance and implementation framework that can be introduced progressively across an SME environment.
+
+---
+
+## Project Objectives
+
+- Establish stronger password and passphrase governance.
+- Define mandatory MFA requirements for organisational access.
+- Develop a phased MFA implementation strategy.
+- Validate MFA authentication behaviour in a simulated laboratory environment.
+- Provide practical security and governance recommendations for SMEs.
+
+---
+
+## Security Policy Framework
+
+### Password & Passphrase Governance
+
+The proposed policy establishes:
+
+- Minimum 14-character passwords for standard staff.
+- Minimum 16-character passwords for administrative roles.
+- Strong password complexity requirements.
+- Use of secure random-word passphrases.
+- Account suspension after repeated failed authentication attempts.
+- Prohibition of common, organisational, and compromised passwords.
+
+### Mandatory MFA Governance
+
+MFA is proposed as mandatory for:
+
+- Internal staff
+- Contractors
+- Third-party vendors accessing organisational resources
+- Privileged and administrative accounts
+
+Preferred second factors include:
+
+- TOTP authenticator applications
+- Hardware security tokens
+
+SMS-based OTP is proposed for phase-out because of risks including SIM swapping and interception.
+
+---
+
+## MFA Implementation Strategy
+
+| Phase | Timeline | Target Group |
+|---|---|---|
+| Phase 1 | Week 1 | IT & Global Administrators |
+| Phase 2 | Week 2 | 15% Pilot Group |
+| Phase 3 | Weeks 3–4 | Company-wide Deployment |
+
+### Phase 1 — Administrator Deployment
+
+Configure Identity Provider policies and enforce MFA for administrators before wider deployment.
+
+### Phase 2 — Pilot Deployment
+
+Deploy MFA to a representative 15% pilot group across selected organisational departments and gather feedback.
+
+### Phase 3 — Company-wide Enforcement
+
+Extend MFA enforcement across the organisation following successful pilot validation.
+
+---
+
+## Technical Validation
+
+The project includes a simulated authentication validation using an Identity Provider environment and TOTP-based MFA.
+
+The documented test demonstrates:
+
+1. Primary credentials are supplied without the required TOTP.
+2. Authentication is denied and an MFA challenge is presented.
+3. The authenticator is enrolled using a QR code.
+4. A valid six-digit TOTP is supplied.
+5. Authentication is successfully completed.
+
+This demonstrates the core security principle that possession of the primary password alone is insufficient when MFA enforcement is active.
+
+---
+
+## Security Recommendations
+
+The project recommends:
+
+- Enforcing MFA for organisational and privileged accounts.
+- Using TOTP applications or hardware security tokens.
+- Strengthening password and passphrase requirements.
+- Preventing the use of compromised passwords.
+- Implementing MFA through a phased rollout.
+- Providing user onboarding and technical support.
+- Establishing a secure account recovery process.
+- Monitoring authentication and access activity.
+
+---
+
+## Project Deliverables
+
+- Final MFA Capstone Assessment Report
+- Authentication Governance Framework
+- MFA Rollout Strategy
+- Technical Validation Evidence
+- Security Recommendations
+- 2–3 Minute Demonstration Video
+
+---
+
+## Repository Contents
+
+```text
+3MTT-SME-MFA-Rollout/
+│
+├── README.md
+└── report/
+    └── 3MTT_MFA_Final_Report_Ahmad_Mukhtar.pdf
