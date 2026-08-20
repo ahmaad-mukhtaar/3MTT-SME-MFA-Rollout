@@ -158,5 +158,3 @@ The project recommends:
 └── report/
     └── 3MTT_MFA_Final_Report_Ahmad_Mukhtar.pdf
 ```
-    └── 3MTT_MFA_Final_Report_Ahmad_Mukhtar.pdf
-```
