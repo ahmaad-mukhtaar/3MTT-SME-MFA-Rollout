@@ -137,10 +137,19 @@ The project recommends:
 ---
 
 ## Repository Contents
-
 ```text
 3MTT-SME-MFA-Rollout/
-│
 ├── README.md
+├── MFA_Implementation_Evidence.md
+├── 01-Primary-Login.jpg
+├── 02-TOTP-Enrollment-QR.jpg
+├── -MFA-Token-Verification-Start.jpg
+├── MFA-Token-Verification-End.jpg
+├── 05-MFA-Access-Granted.jpg
+├── architecture/
+│   └── MFA_Architecture_Spec.md
+├── documentation/
+│   └── MFA_Governance_Framework.md
 └── report/
     └── 3MTT_MFA_Final_Report_Ahmad_Mukhtar.pdf
+```
