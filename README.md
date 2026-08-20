@@ -143,8 +143,8 @@ The project recommends:
 ├── README.md
 ├── 01-Primary-Login.jpg
 ├── 02-TOTP-Enrollment-QR.jpg
-├── -MFA-Token-Verification-Start.jpg
-├── MFA-Token-Verification-End.jpg
+├── 03-MFA-Token-Verification-Start.jpg
+├── 04-MFA-Token-Verification-End.jpg
 ├── 05-MFA-Access-Granted.jpg
 ├── architecture/
 │   ├── MFA_Architecture_Spec.md
