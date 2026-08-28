@@ -158,3 +158,14 @@ The project recommends:
 └── report/
     └── 3MTT_MFA_Final_Report_Ahmad_Mukhtar.pdf
 ```
+## Copyright & Usage Notice
+
+**© 2026 Ahmad Mukhtar Isah. All rights reserved.**
+
+This repository contains original project documentation, framework design, architecture materials, implementation material, and other original content created by Ahmad Mukhtar Isah. Viewing the repository for educational, research, portfolio evaluation, and personal learning purposes is permitted.
+
+Commercial reproduction, redistribution, resale, or creation of derivative commercial products based substantially on this work requires prior written permission from the copyright owner, unless otherwise permitted by the repository's `LICENSE.md`.
+
+Third-party materials, technologies, trademarks, libraries, and referenced products remain subject to their respective licences, terms, and rights. This notice does not claim ownership of third-party intellectual property or of general cybersecurity concepts, standards, methods, or technologies such as MFA, TOTP, QR-code authentication, or Identity & Access Management.
+
+For licensing or commercial-use enquiries, contact the copyright owner through the repository owner's GitHub profile.
